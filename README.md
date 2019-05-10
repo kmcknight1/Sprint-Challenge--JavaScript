@@ -35,11 +35,18 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. What is the difference between a function and a method?
 
+A method is a type of function that is used specifically on objects/arrarys/strings. It is called with the object/array/string to _do something_ with/to that data. A function is a piece of code that _does something_ to data passed down via arguments.
+
 3. What is closure?
 
-Closure allows developers to enclose/hide bits of code within a scoped area.
+Closure allows developers to enclose/hide bits of code within a scoped area. Bits of code are "passed down" by the compiler... therefore, globally scoped variables are accessable everywhere, variables within a function are accessable within that function and anything else residing in that function as well. But variables are not accessabel outside of their scope.
 
 4. Describe the four rules of the 'this' keyword.
+
+1) "This" will be bound to the window/console object when in global scope.
+2) If a function is called on an object (i.e. obj.func()) "this" refers to the object before the function.
+3) When using a constructor function "this" refers to the object created via the constructor function.
+4) When using .call or .apply "this" explicitly binds to whatever object lies within the .call/.apply invocation.
 
 5. Why do we need super() in an extended class?
 
